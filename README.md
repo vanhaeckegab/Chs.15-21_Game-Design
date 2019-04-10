@@ -1,4 +1,4 @@
-<img align="left" src="http://hermonswebsites.com/Classes/CS/python.png"><H2>Chapter 14 Sprites & Collisions</H2>
+<img align="left" src="http://hermonswebsites.com/Classes/CS/python.png"><H2>Chapter 15 Sprites & Collisions</H2>
 
 In this chapter you will be learning about how to create sprites and detect collisions. 
 
