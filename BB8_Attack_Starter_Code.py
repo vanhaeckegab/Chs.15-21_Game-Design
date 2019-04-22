@@ -18,18 +18,15 @@ class MyGame(arcade.Window):
     def on_draw(self):
         arcade.start_render()
 
-    def update(self, dt):
+    def on_update(self, dt):
         pass
 
 
-
-#-----Main Class--------
+#-----Main Function--------
 def main():
     window = MyGame(SW,SH,"BB8 Attack")
     arcade.run()
 
-
-
-#------Run Main----------
+#------Run Main Function-----
 if __name__ == "__main__":
     main()
