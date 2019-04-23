@@ -2,7 +2,7 @@
 SPRITE GAME
 -----------
 Here you will start the beginning of a game that you will be able to update as we
-learn more in the following chapters. Below are the criteria/constraints that you
+learn more in upcoming chapters. Below are the criteria/constraints that you
 need to include:
 
 1.) Find some new sprite images.
