@@ -5,6 +5,6 @@ In this chapter you will be learning about how to create sprites and detect coll
 
 <h3>Jedi Tasks</h3>
 <ol>
-  <li>Take Home Test</li>
+  <li>Jedi Training</li>
   <li>Sprite Game</li>
   </ol>
