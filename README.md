@@ -7,4 +7,5 @@ In this chapter you will be learning about how to create sprites and detect coll
 <ol>
   <li>Jedi Training</li>
   <li>Sprite Game</li>
+  <li>Escape Room</li>
   </ol>
