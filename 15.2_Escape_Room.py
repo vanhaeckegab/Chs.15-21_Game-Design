@@ -1,7 +1,7 @@
 '''
 Escape Room
 -----------
-Attempt to create an Escape Room Game in Python like you did in Scratch in the Intro to Coding course.
+Attempt to create an Escape Room Game.
 '''
 
 import random
