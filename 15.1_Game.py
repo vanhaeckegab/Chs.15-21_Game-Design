@@ -22,11 +22,12 @@ import arcade
 SW = 800
 SH = 600
 
-#------MyGame Class--------------
+
+# ------MyGame Class--------------
 class MyGame(arcade.Window):
 
-    def __init__(self,SW,SH,title):
-        super().__init__(SW, SH, title)
+    def __init__(self, w, h, title):
+        super().__init__(w, h, title)
         arcade.set_background_color(arcade.color.WHITE)
 
     def on_draw(self):
@@ -36,11 +37,12 @@ class MyGame(arcade.Window):
         pass
 
 
-#-----Main Function--------
+# -----Main Function--------
 def main():
-    window = MyGame(SW,SH,"My Game")
+    window = MyGame(SW, SH, "My Game")
     arcade.run()
 
-#------Run Main Function-----
+
+# ------Run Main Function-----
 if __name__ == "__main__":
     main()
