@@ -17,21 +17,44 @@ learn more in upcoming chapters. Below are some ideas that you could include:
 
 import random
 import arcade
+import math
 
 # --- Constants ---
 SW = 800
 SH = 600
 
+lanes = [[100 * math.cos(math.radians(0)) + SW/2], [100 * math.sin(math.radians(0)) + SH/2],
+         [100 * math.cos(math.radians(360 * 1/16)) + SW/2], [100 * math.sin(math.radians(360 * 1/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 2/16)) + SW/2], [100 * math.sin(math.radians(360 * 2/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 3/16)) + SW/2], [100 * math.sin(math.radians(360 * 3/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 4/16)) + SW/2], [100 * math.sin(math.radians(360 * 4/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 5/16)) + SW/2], [100 * math.sin(math.radians(360 * 5/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 6/16)) + SW/2], [100 * math.sin(math.radians(360 * 6/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 7/16)) + SW/2], [100 * math.sin(math.radians(360 * 7/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 8/16)) + SW/2], [100 * math.sin(math.radians(360 * 8/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 9/16)) + SW/2], [100 * math.sin(math.radians(360 * 9/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 10/16)) + SW/2], [100 * math.sin(math.radians(360 * 10/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 11/16)) + SW/2], [100 * math.sin(math.radians(360 * 11/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 12/16)) + SW/2], [100 * math.sin(math.radians(360 * 12/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 13/16)) + SW/2], [100 * math.sin(math.radians(360 * 13/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 14/16)) + SW/2], [100 * math.sin(math.radians(360 * 14/16)) + SH/2],
+         [100 * math.cos(math.radians(360 * 15/16)) + SW/2], [100 * math.sin(math.radians(360 * 15/16)) + SH/2]]
+
 
 # ------MyGame Class--------------
 class MyGame(arcade.Window):
-
     def __init__(self, w, h, title):
         super().__init__(w, h, title)
         arcade.set_background_color(arcade.color.WHITE)
 
     def on_draw(self):
         arcade.start_render()
+        for i in range(0, len(lanes), 4):
+            sx += lanes[i]
+            sy += lanes[i + 1]
+            ex += lanes[i + 2]
+            ey += lanes[i + 3]
+            arcade.draw_line(sx, sy, ex, ey, arcade.color.BLACK)
 
     def on_update(self, dt):
         pass
